@@ -1,0 +1,25 @@
+deviceLabel: Power Meter
+profiles:
+  - normal_powerMeter_v1
+datapoints:
+  # https://raw.githubusercontent.com/jeverley/zha-device-handlers/refs/heads/ts0601_energy_meter_devices/zhaquirks/tuya/ts0601_energy_meter.py
+  - id: 113
+    command: currentMeasurement
+    base:
+      group: 1
+      rate: 10000
+  - id: 101
+    command: powerMeter
+    base:
+      group: 1
+      rate: 1000
+  - id: 112
+    command: voltageMeasurement
+    base:
+      group: 1
+      rate: 1000
+  - id: 107
+    command: energyMeter
+    base:
+      group: 1
+      rate: 10000

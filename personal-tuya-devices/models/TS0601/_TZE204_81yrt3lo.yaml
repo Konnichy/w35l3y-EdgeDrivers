@@ -22,4 +22,4 @@ datapoints:
     command: energyMeter
     base:
       group: 1
-      rate: 10000
+      rate: 1000

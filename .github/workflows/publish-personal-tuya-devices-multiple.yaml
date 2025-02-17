@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - beta
+      - beta#myversion
     paths:
       - "personal-tuya-devices/src/**.lua"
       - "personal-tuya-devices/models/**.yaml"

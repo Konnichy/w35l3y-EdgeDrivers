@@ -1,25 +1,40 @@
 deviceLabel: Power Meter
 profiles:
-  - normal_multi_powerMeter_v1
+  - normal_multi_powerMeter_v2
 datapoints:
   # https://raw.githubusercontent.com/jeverley/zha-device-handlers/refs/heads/ts0601_energy_meter_devices/zhaquirks/tuya/ts0601_energy_meter.py
+  - id: 115
+    command: powerMeter
+    base:
+      group: 1
+      rate: 1000
+  - id: 0
+    command: currentMeasurement
+    base:
+      group: 1
+      rate: 10000
+  - id: 112
+    command: voltageMeasurement
+    base:
+      group: 1
+      rate: 1000
   - id: 2
     command: energyMeter
     base:
       group: 1
       rate: 1000
-  - id: 112
-    command: voltageMeasurement
+  - id: 101
+    command: powerMeter
     base:
-      group: 1
+      group: 2
       rate: 1000
   - id: 113
     command: currentMeasurement
     base:
       group: 2
       rate: 10000
-  - id: 101
-    command: powerMeter
+  - id: 0
+    command: voltageMeasurement
     base:
       group: 2
       rate: 1000
@@ -28,13 +43,18 @@ datapoints:
     base:
       group: 2
       rate: 1000
+  - id: 105
+    command: powerMeter
+    base:
+      group: 3
+      rate: 1000
   - id: 114
     command: currentMeasurement
     base:
       group: 3
       rate: 10000
-  - id: 105
-    command: powerMeter
+  - id: 0
+    command: voltageMeasurement
     base:
       group: 3
       rate: 1000

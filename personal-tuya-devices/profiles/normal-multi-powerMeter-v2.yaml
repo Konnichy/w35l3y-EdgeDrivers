@@ -8,8 +8,6 @@ components:
     capabilities:
       - id: powerMeter
         version: 1
-      - id: currentMeasurement
-        version: 1
       - id: voltageMeasurement
         version: 1
       - id: energyMeter
@@ -29,8 +27,6 @@ components:
         version: 1
       - id: currentMeasurement
         version: 1
-      - id: voltageMeasurement
-        version: 1
       - id: energyMeter
         version: 1
     categories:
@@ -41,8 +37,6 @@ components:
       - id: powerMeter
         version: 1
       - id: currentMeasurement
-        version: 1
-      - id: voltageMeasurement
         version: 1
       - id: energyMeter
         version: 1
@@ -82,16 +76,7 @@ preferences:
         _: Auto
         _TZE204_81yrt3lo: _TZE204_81yrt3lo
   - name: dpPowerMeterMain01
-    title: DP for Power Meter A
-    description: Only if you want to override the default DataPoint
-    required: true
-    preferenceType: integer
-    definition:
-      minimum: 0
-      maximum: 255
-      default: 0
-  - name: dpCurrentMeasuremeMain01
-    title: DP for Current Measurement A
+    title: DP for the Common Power Meter
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -100,7 +85,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpVoltageMeasuremeMain01
-    title: DP for Voltage Measurement A
+    title: DP for the Common Voltage Measurement
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -109,7 +94,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpEnergyMeterMain01
-    title: DP for Energy Meter A
+    title: DP for the Common Energy Meter
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -118,7 +103,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpPowerMeterMain02
-    title: DP for Power Meter B
+    title: DP for Power Meter A
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -127,16 +112,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpCurrentMeasuremeMain02
-    title: DP for Current Measurement B
-    description: Only if you want to override the default DataPoint
-    required: true
-    preferenceType: integer
-    definition:
-      minimum: 0
-      maximum: 255
-      default: 0
-  - name: dpVoltageMeasuremeMain02
-    title: DP for Voltage Measurement B
+    title: DP for Current Measurement A
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -145,7 +121,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpEnergyMeterMain02
-    title: DP for Energy Meter B
+    title: DP for Energy Meter A
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -154,7 +130,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpPowerMeterMain03
-    title: DP for Power Meter C
+    title: DP for Power Meter B
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -163,16 +139,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpCurrentMeasuremeMain03
-    title: DP for Current Measurement C
-    description: Only if you want to override the default DataPoint
-    required: true
-    preferenceType: integer
-    definition:
-      minimum: 0
-      maximum: 255
-      default: 0
-  - name: dpVoltageMeasuremeMain03
-    title: DP for Voltage Measurement C
+    title: DP for Current Measurement B
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer
@@ -181,7 +148,7 @@ preferences:
       maximum: 255
       default: 0
   - name: dpEnergyMeterMain03
-    title: DP for Energy Meter C
+    title: DP for Energy Meter B
     description: Only if you want to override the default DataPoint
     required: true
     preferenceType: integer

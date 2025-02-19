@@ -8,11 +8,6 @@ datapoints:
     base:
       group: 1
       rate: 1000
-  - id: 2
-    command: energyMeter
-    base:
-      group: 1
-      rate: 1000
   - id: 101
     command: powerMeter
     base:

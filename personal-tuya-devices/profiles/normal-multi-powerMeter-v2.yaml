@@ -8,8 +8,6 @@ components:
     capabilities:
       - id: voltageMeasurement
         version: 1
-      - id: energyMeter
-        version: 1
       - id: signalStrength
         version: 1
       - id: refresh

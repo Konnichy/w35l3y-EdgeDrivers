@@ -6,8 +6,6 @@ components:
   - id: main
     label: Common
     capabilities:
-      - id: powerMeter
-        version: 1
       - id: voltageMeasurement
         version: 1
       - id: energyMeter

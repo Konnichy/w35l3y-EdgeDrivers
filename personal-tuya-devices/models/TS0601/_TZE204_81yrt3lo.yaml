@@ -3,7 +3,7 @@ profiles:
   - normal_multi_powerMeter_v2
 datapoints:
   # https://raw.githubusercontent.com/jeverley/zha-device-handlers/refs/heads/ts0601_energy_meter_devices/zhaquirks/tuya/ts0601_energy_meter.py
-  - id: 115
+  - id: 1
     command: powerMeter
     base:
       group: 1
